@@ -1,0 +1,30 @@
+.content h2 {
+  color: #fff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 0.8px #a5a5a5;
+}
+.content h2:nth-child(2) {
+  background: radial-gradient(100% 58% at top, transparent 99%, rgb(0, 255, 225)) calc(0 * 100% / 3) 0,
+    radial-gradient(100% 58% at bottom, rgb(0, 255, 225) 99%, transparent) calc(3 * 100% / 3) 0,
+    radial-gradient(100% 58% at top, transparent 99%, 80%, rgb(0, 255, 225)) calc(6 * 100% / 3) 0,
+    radial-gradient(100% 58% at bottom, rgb(0, 255, 225) 99%, transparent) calc(9 * 100% / 3) 0;
+  background-size: 50.5% 100%;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+  display: inline-block;
+  font-weight: bold;
+  animation: move 3s infinite linear;
+}
+
+@keyframes move {
+  to {
+    background-position: calc(-6 * 100% / 3) 0, calc(-3 * 100% / 3) 0, calc(0 * 100% / 3) 0, calc(3 * 100% / 3) 0;
+  }
+}

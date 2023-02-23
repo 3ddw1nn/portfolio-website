@@ -1,0 +1,202 @@
+{
+  "ArtCatalog": [
+    {
+      "id": 1,
+      "name": "Akira Tetsuo Poster",
+      "src": "/ArtCatalog/Akira.jpg",
+      "description": "Hand drawn with ink. Then digitally rendered in Photoshop"
+    },
+    {
+      "id": 2,
+      "name": "Vol'Jin Head Turn-around",
+      "src": "/ArtCatalog/VoljinTurnAround.jpg",
+      "description": "Vol'Jin the Troll from Blizzard Entertainment"
+    },
+    {
+      "id": 3,
+      "name": "Siren",
+      "src": "/ArtCatalog/Tiffany.jpg",
+      "description": "A digital portrait of Tiffany Chiou"
+    },
+    {
+      "id": 4,
+      "name": "Hae Cover",
+      "src": "/ArtCatalog/Hae.jpg",
+      "description": "Digital cover painting of Cherry Youn for an illustrative narrative, \"Hae, Sister of the Moon\" "
+    },
+    {
+      "id": 5,
+      "name": "Hae Archer",
+      "src": "/ArtCatalog/Hae2.jpg",
+      "description": "The second illustration piece of the demon hunter, Hae"
+    },
+    {
+      "id": 6,
+      "name": "Hae Demon Hunter",
+      "src": "/ArtCatalog/Hae3.jpg",
+      "description": "The last illustration piece of Hae. Here she is slaying a demon"
+    },
+    {
+      "id": 7,
+      "name": "A Night in Tokyo",
+      "src": "/ArtCatalog/Minjoo.jpg",
+      "description": "An illustrative piece of Min Joo in Tokyo"
+    },
+    {
+      "id": 8,
+      "name": "Whale Tales",
+      "src": "/ArtCatalog/WhaleVector.jpg",
+      "description": "A logo for Whale Tales"
+    },
+    {
+      "id": 9,
+      "name": "Whale Tales Ship",
+      "src": "/ArtCatalog/WhaleShip.jpg",
+      "description": "A vectorized cut out for Whale Tales"
+    },
+    {
+      "id": 10,
+      "name": "Beat Rhino Promo Front",
+      "src": "/ArtCatalog/BeatRhino.jpg",
+      "description": "A promo for Beat Rhino, a Korean American Beat Boxer"
+    },
+    {
+      "id": 11,
+      "name": "Beat Rhino Promo Back",
+      "src": "/ArtCatalog/BeatRhinoCard.jpg",
+      "description": "Business card for Beat Rhino "
+    },
+    {
+      "id": 12,
+      "name": "Geisha",
+      "src": "/ArtCatalog/Geisha.jpg",
+      "description": "Geisha illustration"
+    },
+    {
+      "id": 13,
+      "name": "Demon Geisha",
+      "src": "/ArtCatalog/DemonGeisha.jpg",
+      "description": "Demon Geisha illustration"
+    },
+    {
+      "id": 14,
+      "name": "Free The Wild",
+      "src": "/ArtCatalog/FreeTheWild.jpg",
+      "description": "Ink illustration about being free in the wild"
+    },
+    {
+      "id": 15,
+      "name": "Breaking Through Reality",
+      "src": "/ArtCatalog/Break From Reality.jpg",
+      "description": "Ink illustration about breaking the barriers of reality and being spiritually free"
+    },
+    {
+      "id": 16,
+      "name": "Akira Tetsuo Ink",
+      "src": "/ArtCatalog/AkiraInk.jpg",
+      "description": "Ink drawing for the cover of Akira"
+    },
+    {
+      "id": 17,
+      "name": "Monstro",
+      "src": "/ArtCatalog/MonstroSculpture.jpg",
+      "description": "A 3D clay model for the Leviathan in \"Fruits of Life\""
+    },
+    {
+      "id": 18,
+      "name": "Monstro",
+      "src": "/ArtCatalog/MonstroSculpture2.jpg",
+      "description": "A 3D clay model for the Leviathan in \"Fruits of Life\""
+    },
+    {
+      "id": 19,
+      "name": "Monstro",
+      "src": "/ArtCatalog/MonstroSculpture3.jpg",
+      "description": "A 3D clay model for the Leviathan in \"Fruits of Life\""
+    },
+    {
+      "id": 20,
+      "name": "Alice Glass",
+      "src": "/ArtCatalog/AliceGlass.jpg",
+      "description": "Ink portrait of Alice Glass"
+    },
+    {
+      "id": 21,
+      "name": "Wizard",
+      "src": "/ArtCatalog/Wizard.jpg",
+      "description": "Illustration of a wizard in the woods"
+    },
+    {
+      "id": 22,
+      "name": "Walter White",
+      "src": "/ArtCatalog/Breaking Bad.jpg",
+      "description": "Walter White close up portrait"
+    },
+    {
+      "id": 23,
+      "name": "Justice",
+      "src": "/ArtCatalog/Justice.jpg",
+      "description": "An Illustration for grabbing justice"
+    },
+    {
+      "id": 24,
+      "name": "Over The Garden Wall",
+      "src": "/ArtCatalog/Silhouette.jpg",
+      "description": "Ink"
+    },
+    {
+      "id": 25,
+      "name": "Over The Garden Wall",
+      "src": "/ArtCatalog/OTGW.jpg",
+      "description": "Ink"
+    },
+    {
+      "id": 24,
+      "name": "Pipi's Orange Invasion",
+      "src": "/ArtCatalog/Pipi Beverage Poster.jpg",
+      "description": "Poster"
+    },
+    {
+      "id": 24,
+      "name": "Gary The Elephant",
+      "src": "/ArtCatalog/GaryTheElephant.jpg",
+      "description": "Printable Fabric for Stuffed Animal"
+    },
+    {
+      "id": 25,
+      "name": "CCA Shirt",
+      "src": "/ArtCatalog/CCAShirt.jpg",
+      "description": "School Shirt Design"
+    },
+    {
+      "id": 26,
+      "name": "Hipster Chimera",
+      "src": "/ArtCatalog/Shirt.jpg",
+      "description": "Ink"
+    },
+    {
+      "id": 27,
+      "name": "Hybrid Animal",
+      "src": "/ArtCatalog/Hybrid Animal.jpg",
+      "description": "Ink"
+    },
+    {
+      "id": 28,
+      "name": "Athena",
+      "src": "/ArtCatalog/Athena.jpg",
+      "description": "Photoshop"
+    },
+    {
+      "id": 29,
+      "name": "Debonair Tinker",
+      "src": "/ArtCatalog/Debonair Tinker.jpg",
+      "description": "Photoshop"
+    },
+    {
+      "id": 30,
+      "name": "View Master",
+      "src": "/ArtCatalog/ViewMaster.jpg",
+      "description": "Photoshop"
+    }
+  ]
+}

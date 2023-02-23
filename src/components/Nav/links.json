@@ -1,0 +1,43 @@
+{
+  "sections": [
+    {
+      "label": "Portfolio",
+      "path": "#portfolio",
+      "sectionPosition": 2
+    },
+    {
+      "label": "About",
+      "path": "#about",
+      "sectionPosition": 3
+    },
+    {
+      "label": "Contact",
+      "path": "#contact",
+      "sectionPosition": 4
+    }
+  ],
+  "links": [
+    {
+      "label": "Shop",
+      "href": "/shop"
+    }
+  ],
+  "dropdown": [
+    {
+      "label": "Code",
+      "href": "/portfolio/code"
+    },
+    {
+      "label": "UI/UX",
+      "href": "/portfolio/ui_ux"
+    },
+    {
+      "label": "Illustration",
+      "href": "/portfolio/illustration"
+    },
+    {
+      "label": "Architecture",
+      "href": "/portfolio/architecture"
+    }
+  ]
+}

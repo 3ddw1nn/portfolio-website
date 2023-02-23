@@ -1,0 +1,270 @@
+// import AboutMe from "../components/AboutMe";
+
+// import ForeGround from "../assets/ForeGround.png";
+// import MiddleStars from "../assets/MiddleStars.png";
+// import BigStars from "../assets/BigStars.png";
+// import Stars from "../assets/Stars.png";
+// import Sky from "../assets/Sky.png";
+
+// import { IParallax, Parallax, ParallaxLayer } from "@react-spring/parallax";
+// import { code, programs } from "../../public/icons/iconlist.json";
+// import { Images } from "../pages/portfolio/Portfolio.json";
+// import { useState } from "react";
+
+// import { ContactMe } from "../components/ContactMe";
+
+// import "./infoAnimation.css";
+// import "./multiTextAnimation.css";
+// import "./borderAnimation.css";
+// import "./myPortfolioAnimation.css";
+// type Icon = {
+//   title: string;
+//   src: string;
+// };
+
+// type Image = {
+//   name: string;
+//   src: string;
+//   date: string;
+//   description: string;
+// };
+
+// const Home = () => {
+//   let element: IParallax | null;
+
+//   const handleClick = () => {
+//     element?.scrollTo(0);
+//   };
+
+//   const [skillTitle, setSkillTitle] = useState("Skills");
+//   return (
+//     <div>
+//       <div className={"w-full h-full"}>
+//         <Parallax pages={6} ref={(ref) => (element = ref)}>
+//           {/* Layer 7 */}
+//           <ParallaxLayer
+//             offset={0}
+//             speed={0.5}
+//             factor={2}
+//             style={{
+//               backgroundImage: `url(${Sky})`,
+//               backgroundSize: "w-fit",
+//               backgroundPosition: "center",
+//             }}
+//           ></ParallaxLayer>
+//           <ParallaxLayer
+//             offset={0}
+//             speed={0.8}
+//             factor={1.2}
+//             style={{
+//               backgroundImage: `url(${Stars})`,
+//               backgroundSize: "cover",
+//               backgroundPosition: "center",
+//             }}
+//           ></ParallaxLayer>
+
+//           <ParallaxLayer
+//             offset={0}
+//             speed={1.5}
+//             factor={1.2}
+//             style={{
+//               backgroundImage: `url(${MiddleStars})`,
+//               backgroundSize: "cover",
+//               backgroundPosition: "center",
+//             }}
+//           ></ParallaxLayer>
+
+//           <ParallaxLayer
+//             offset={0}
+//             speed={1.8}
+//             factor={1.2}
+//             style={{
+//               backgroundImage: `url(${BigStars})`,
+//               backgroundSize: "cover",
+//               backgroundPosition: "center",
+//             }}
+//           ></ParallaxLayer>
+
+//           {/* Layer 5 */}
+//           {/* <ParallaxLayer
+//             offset={0.9999}
+//             speed={1.5}
+//             factor={1.1}
+//             style={{
+//               backgroundImage: `url(${layer5})`,
+//               backgroundSize: "cover",
+//               backgroundPosition: "center",
+//             }}
+//           ></ParallaxLayer> */}
+//           <ParallaxLayer offset={0.4} speed={1.5} factor={1.1}>
+//             <h1 className="text-4xl text-transparent text-center">
+//               <div className="sm:text-7xl text-4xl tracking-wide font-extrabold bg-gradient-to-r animate-text bg-clip-text from-green-400 to-purple-500">
+//                 <div className="">SEND MOODS</div>
+//               </div>
+//             </h1>
+//           </ParallaxLayer>
+//           {/* Layer 4 */}
+//           {/* <ParallaxLayer
+//             offset={0.9999}
+//             speed={3}
+//             factor={2.1}
+//             style={{
+//               backgroundImage: `url(${layer2})`,
+//               backgroundSize: "cover",
+//               backgroundPosition: "center",
+//             }}
+//           ></ParallaxLayer> */}
+//           {/* Layer 3 */}
+//           {/* <ParallaxLayer
+//             offset={0}
+//             speed={2}
+//             factor={4}
+//             style={{
+//               backgroundImage: `url(${layer3})`,
+//               backgroundSize: "contain",
+//               backgroundPosition: "center",
+//             }}
+//           ></ParallaxLayer> */}
+//           {/* Layer 2 */}
+//           {/* <ParallaxLayer
+//             offset={0.87}
+//             speed={1}
+//             factor={1}
+//             style={{
+//               backgroundImage: `url(${layer2})`,
+//               backgroundSize: "cover",
+//               backgroundPosition: "center",
+//             }}
+//           ></ParallaxLayer> */}
+//           {/* Layer 1 */}
+//           <ParallaxLayer
+//             offset={0.3}
+//             speed={1}
+//             factor={2}
+//             style={{
+//               backgroundImage: `url(${ForeGround})`,
+//               backgroundSize: "cover",
+//               backgroundPosition: "center",
+//             }}
+//           ></ParallaxLayer>
+
+//           <ParallaxLayer offset={1.65} speed={0.7}>
+//             {/* <div className="testing">TESTING</div> */}
+//             <section className="flex justify-center mb-36">
+//               <div className="content">
+//                 <h2 className="text-8xl">PORTFOLIO</h2>
+//                 <h2 className="text-8xl">PORTFOLIO</h2>
+//               </div>
+//             </section>
+//             <div className="gallery sm:mt-12 sm:px-24 sm:h-[350px] rounded-full">
+//               {Images.map((image: Image) => {
+//                 return (
+//                   <div className="relative">
+//                     <a key={image.src} href={`/portfolio/illustration/${image.name}`}>
+//                       {" "}
+//                       <img className="" src={image.src} alt="" />
+//                     </a>
+//                     <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-70">
+//                       <div className=" text-white font-bold">{image.name}</div>
+//                     </div>
+//                   </div>
+//                 );
+//               })}
+//             </div>
+//           </ParallaxLayer>
+//           {/* Button */}
+
+//           <ParallaxLayer offset={2.4}>
+//             <div className="flex flex-col justify-center items-center">
+//               <div className="box relative overflow-hidden w-[200px] h-[200px] md:w-[400px] md:h-[400px] text-white "></div>
+//               <div className="sm:pt-10 pt-3 flex flex-col items-center justify-center bg-cool-gray-700 z-0">
+//                 <h1 className="text-4xl font-black text-white text-center">
+//                   <section className="container">
+//                     <div className="bg-gradient-to-r bg-clip-text from-green-400 to-purple-500">
+//                       <div className="sm:pt-9 ">FULL STACK SOFTWARE ENGINEER</div>
+//                     </div>
+//                     <div className="bg-gradient-to-r bg-clip-text from-green-400 to-purple-500">
+//                       <div className="pt-9"> DESIGNER</div>
+//                     </div>
+//                     <div className="bg-gradient-to-r bg-clip-text from-green-400 to-purple-500">
+//                       <div className="pt-9"> ENTREPRENEUR</div>
+//                     </div>
+//                   </section>
+//                 </h1>
+//                 <AboutMe />
+//               </div>
+//             </div>
+//           </ParallaxLayer>
+//           <ParallaxLayer offset={3.8} speed={1}>
+//             <div className="flex justify-center ">
+//               <div className="sm:bg-slate-800 sm:flex sm:flex-col sm:justify-center sm:p-16 sm:w-fit rounded-lg sm:border-solid sm:border-2 sm:border-slate-700">
+//                 <div className="flex justify-center text-white text-3xl mb-4"> {skillTitle} </div>
+//                 <div className=" flex justify-center">
+//                   <div className="sm:flex sm:py-6 grid grid-cols-4 gap-2 mx-auto ">
+//                     {code.map((icon: Icon) => {
+//                       return (
+//                         <div key={icon.src}>
+//                           <img
+//                             onMouseEnter={() => {
+//                               setSkillTitle(`${icon.title}`);
+//                             }}
+//                             onMouseLeave={() => {
+//                               setSkillTitle("Skills");
+//                             }}
+//                             src={icon.src}
+//                             className="grayscale hover:grayscale-0 h-14 mr-3"
+//                             alt={icon.title}
+//                           />
+//                         </div>
+//                       );
+//                     })}
+//                   </div>
+//                 </div>
+//                 <div className="flex justify-center">
+//                   <div className="sm:flex grid grid-cols-4 gap-2 mx-auto">
+//                     {programs.map((icon: Icon) => {
+//                       return (
+//                         <div key={icon.src} className="">
+//                           <img
+//                             onMouseEnter={() => {
+//                               setSkillTitle(`${icon.title}`);
+//                             }}
+//                             onMouseLeave={() => {
+//                               setSkillTitle("Skills");
+//                             }}
+//                             src={icon.src}
+//                             className="grayscale hover:grayscale-0 h-14 mr-3"
+//                             alt={icon.title}
+//                           />
+//                         </div>
+//                       );
+//                     })}
+//                   </div>
+//                 </div>
+//               </div>
+//             </div>
+//           </ParallaxLayer>
+//           <ParallaxLayer offset={5}>
+//             {/* <section className="mt-6 bg-transparent"> */}
+//             {/* <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md"> */}
+//             <ContactMe />
+//             {/* </section> */}
+//           </ParallaxLayer>
+//         </Parallax>
+//       </div>
+//       <div className="z-10 absolute bg-transparent mt-20 pr-4 right-0 ">
+//         <div className="flex flex-col justify-end">
+//           <img
+//             onClick={() => handleClick()}
+//             src="/images/BackToTop.png"
+//             className=" bg-transparent cursor-pointer invert h-14 w-14 ml-10 "
+//             alt="Back To Top"
+//           />
+//           <h1 className="bg-transparent pl-4 text-sm font-bold  text-white">BACK TO TOP</h1>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Home;
