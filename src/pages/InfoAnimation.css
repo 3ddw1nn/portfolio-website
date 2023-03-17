@@ -75,6 +75,9 @@
 .infoParagraph:nth-child(18) {
   animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
+.infoParagraph:nth-child(19) {
+  animation: fade-in 0.8s 3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
 
 @keyframes fade-in {
   100% {

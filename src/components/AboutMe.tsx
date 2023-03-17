@@ -25,7 +25,7 @@ function AboutMe() {
             </section>
           </h1>
         </div>
-        <div className=" flex justify-centerabsolute top-[350px] sm:top-[600px] w-96 text-white">
+        <div className=" flex justify-centerabsolute top-[350px] sm:top-[600px] sm:w-96 text-white">
           <div className=" text-xl items-center text-center px-5 pb-6">
             <h1 className="">
               <span ref={reference} className={`pr-1 opacity-0 ${inView ? "infoParagraph" : ""}`}>
@@ -76,10 +76,13 @@ function AboutMe() {
               <span ref={reference} className={`pr-1 opacity-0 ${inView ? "infoParagraph" : ""}`}>
                 solutions
               </span>
+              <br></br>
+              <div ref={reference} className={` pt-4 opacity-0 text-white ${inView ? "infoParagraph" : ""}`}>
+                <div>Los Angeles, California</div>
+              </div>
             </h1>
           </div>
         </div>
-        <div className="flex justify-center text-white">Los Angeles, California</div>
       </div>
     </div>
   );

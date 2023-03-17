@@ -41,9 +41,8 @@ const Home = () => {
   return (
     <div>
       <div className={"w-full h-full"}>
-        <Parallax pages={6.2} ref={(ref) => (element = ref)}>
+        <Parallax pages={window.innerWidth < 768 ? 5.45 : 5.4} ref={(ref) => (element = ref)}>
           {/* Intro Art Scroll Section */}
-
           {/* Sky Layer */}
           <ParallaxLayer
             offset={0}
@@ -96,10 +95,9 @@ const Home = () => {
               </div>
             </h1>
           </ParallaxLayer>
-
           {/* Foreground Layer */}
           <ParallaxLayer
-            offset={0.3}
+            offset={window.innerWidth < 768 ? 0.4 : 0.3}
             speed={1}
             factor={2}
             style={{
@@ -110,22 +108,19 @@ const Home = () => {
           >
             {/* My Portfolio Section */}
           </ParallaxLayer>
-          <ParallaxLayer offset={1.65} speed={0.7} id="portfolio">
+          <ParallaxLayer offset={window.innerWidth < 768 ? 1.3 : 1.65} speed={0.7} id="portfolio">
             <MyPortfolio />
           </ParallaxLayer>
-
           {/* About Me Section */}
-          <ParallaxLayer offset={2.4} id="about">
+          <ParallaxLayer offset={window.innerWidth < 768 ? 2.2 : 2.4} id="about">
             <AboutMe />
           </ParallaxLayer>
-
           {/* My Skills Section  */}
-          <ParallaxLayer offset={3.8}>
+          <ParallaxLayer offset={window.innerWidth < 768 ? 3.4 : 3.8}>
             <MySkills />
           </ParallaxLayer>
-
           {/* Contact Me Section */}
-          <ParallaxLayer offset={4.8} id="contact">
+          <ParallaxLayer offset={4.5} id="contact">
             <ContactMe />
           </ParallaxLayer>
         </Parallax>

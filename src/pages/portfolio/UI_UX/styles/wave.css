@@ -1,4 +1,3 @@
-HTML,
 .content {
   background-color: var(--wave-4-color);
   color: var(--wave-2-color);
@@ -21,18 +20,18 @@ HTML,
 .waves {
   margin-bottom: -5px;
   width: 100%;
-  height: var(--wave-set-height);
+  height: calc(var(--wave-set-height) * 2);
 }
-@media (min-width: 768px) {
-  .waves {
-    height: calc(var(--wave-set-height) * 1.5);
-  }
-}
-@media (min-width: 1280px) {
+/* @media (min-width: 768px) {
   .waves {
     height: calc(var(--wave-set-height) * 2);
   }
-}
+} */
+/* @media (min-width: 1280px) {
+  .waves {
+    height: calc(var(--wave-set-height) * 2);
+  }
+} */
 .waves .wave-1 {
   transform: translateX(50%);
 }
