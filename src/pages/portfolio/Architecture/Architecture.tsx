@@ -20,7 +20,7 @@ const Architecture = () => {
   };
 
   return (
-    <div className="mt-20">
+    <div className="bg-black mt-20">
       <div className={model ? "model open" : "model"}>
         <img src={tempImgSrc} />
         <div>

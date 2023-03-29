@@ -43,7 +43,7 @@ const code = () => {
     });
   });
   return (
-    <div>
+    <div className="bg-black">
       <header>
         <h1 className=" flex items-center text-4xl text-transparent text-center">
           <img
@@ -66,7 +66,7 @@ const code = () => {
             ></div>
           </div>
           <div className="flex w-1/3 justify-center">
-            <div className="flex flex-col justify-center ">
+            <div className="flex flex-col text-center justify-center ">
               <h5 className="mb-2 mt-8 sm:mt-0 sm:ml-6 ml-0 text-2xl font-bold text-white">Blog</h5>
               <p className="mb-3  font-normal  sm:ml-6 ml-0 text-gray-400">Personal Blog Project</p>
             </div>
@@ -80,7 +80,7 @@ const code = () => {
             ></div>
           </div>
           <div className="flex w-1/3 justify-center">
-            <div className="flex flex-col justify-center ">
+            <div className="flex flex-col text-center  justify-center ">
               <h5 className="mb-2 mt-8 sm:mt-0 sm:ml-6 ml-0 text-2xl font-bold text-white">Members Only</h5>
               <p className="mb-3  font-normal  sm:ml-6 ml-0 text-gray-400">Personal Members Club Project</p>
             </div>

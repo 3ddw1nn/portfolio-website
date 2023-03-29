@@ -5,6 +5,7 @@ import hoverEffect from "hover-effect";
 import image from "./images/image.jpg";
 import image2 from "./images/image2.jpg";
 import overlay from "./images/overlay.png";
+import "./styles/ui-ux.css";
 
 const UI_UX = () => {
   useEffect(() => {
@@ -26,7 +27,7 @@ const UI_UX = () => {
     });
   });
   return (
-    <div>
+    <div className="bg-black">
       <header>
         <div className="h-[800px] sm:px-8 w-full flex items-center text-white absolute justify-center">
           <div className="text-3xl w-2/3">
@@ -49,7 +50,7 @@ const UI_UX = () => {
             ></a>
           </div>
           <div className="flex w-1/3 justify-center">
-            <div className="flex flex-col justify-center ">
+            <div className="flex flex-col text-center justify-center ">
               <h5 className="mb-2 mt-8 sm:mt-0 sm:ml-6 ml-0 text-2xl font-bold text-white">POST IT</h5>
               <p className="mb-3  font-normal  sm:ml-6 ml-0 text-gray-400">Personal UI/UX Project</p>
             </div>

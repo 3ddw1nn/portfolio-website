@@ -14,7 +14,7 @@ const Illustration = () => {
   };
 
   return (
-    <div className="mt-20">
+    <div className="mt-20 bg-black">
       <div className={model ? "model open" : "model"}>
         <img src={tempImgSrc} />
         <div>

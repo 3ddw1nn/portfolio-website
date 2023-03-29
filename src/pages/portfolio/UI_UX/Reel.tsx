@@ -16,9 +16,9 @@ function Reel() {
   return (
     <>
       <div ref={ref} id="skills" className="wrapper mx-4 h-full bg-no-repeat bg-center bg-cover  lg:p-4">
-        <div className="skills-wrapper text-center text-white bg-transparent  p-16 rounded-[50px] lg:p-2">
-          <h1 className="text-4xl py-8  ">Market Size</h1>
-          <p className="text-lg px-16 pb-8">
+        <div className="skills-wrapper text-center text-white bg-transparent  sm:p-16 px-4 rounded-[50px] lg:p-2">
+          <h1 className="sm:text-4xl text-3xl my-10  ">Market Size</h1>
+          <p className="sm:text-lg  text-m sm:px-16  pb-8">
             Post It provides listings that are created from users and are verified through Post It's data management
             team. To create a listing, a user must provide a caption, an address, a description, and photos/videos.
             These listings will be sorted by distance and relevance from the user's current location. User's may share

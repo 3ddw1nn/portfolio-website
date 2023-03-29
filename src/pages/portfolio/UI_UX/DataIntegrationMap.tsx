@@ -180,25 +180,33 @@ function DataIntegrationMap() {
           }`}
           alt="Placeholder 2"
         />
-        <div
-          ref={refMobile11}
-          className={`flex mx-4 w-full space-x-6 ${
-            inViewM11
-              ? "opacity-100 transform translate-x-0 transition-all duration-1000 delay-200 ease-in-out"
-              : "opacity-0 translate-x-24"
-          }`}
-        >
-          <div className="h-[43%] w-full rounded-3xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
-            <div className="flex flex-col h-full w-full bg-black overflow-hidden rounded-3xl">
-              <h1 className="text-lg py-2 text-center font-black text-white">User Profile</h1>
-              <img src={userProfile} className="rounded-br-3xl rounded-bl-3xl" alt="Placeholder 2" />
+        <div ref={refMobile11} className="flex w-full space-x-4">
+          <div
+            className={`flex w-full space-x-6 ${
+              inViewM11
+                ? "opacity-100 transform translate-x-0 transition-all duration-1000 delay-200 ease-in-out"
+                : "opacity-0 -translate-x-24"
+            }`}
+          >
+            <div className=" w-full rounded-3xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
+              <div className="flex flex-col h-full w-full bg-black overflow-hidden rounded-3xl">
+                <h1 className="text-lg py-2 text-center font-black text-white">User Profile</h1>
+                <img src={userProfile} className="h-full rounded-br-3xl rounded-bl-3xl" alt="Placeholder 2" />
+              </div>
             </div>
           </div>
-
-          <div className="h-[43%] w-full rounded-3xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
-            <div className="flex flex-col h-full w-full bg-black overflow-hidden rounded-3xl">
-              <h1 className="text-lg py-2 text-center font-black text-white">Instant Messaging</h1>
-              <img src={instantMessaging} className="rounded-br-3xl rounded-bl-3xl" alt="Placeholder 2" />
+          <div
+            className={`flex w-full space-x-6 ${
+              inViewM11
+                ? "opacity-100 transform translate-x-0 transition-all duration-1000 delay-200 ease-in-out"
+                : "opacity-0 translate-x-24"
+            }`}
+          >
+            <div className="w-full rounded-3xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
+              <div className="flex flex-col h-full w-full bg-black overflow-hidden rounded-3xl">
+                <h1 className="text-lg py-2 text-center font-black text-white">Instant Messaging</h1>
+                <img src={instantMessaging} className="rounded-br-3xl rounded-bl-3xl" alt="Placeholder 2" />
+              </div>
             </div>
           </div>
         </div>
@@ -338,14 +346,14 @@ function DataIntegrationMap() {
           <div className="h-[43%] w-full rounded-3xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
             <div className="flex flex-col h-full w-full bg-black overflow-hidden rounded-3xl">
               <h1 className="text-lg py-2 text-center font-black text-white">User Profile</h1>
-              <img src={userProfile} className="rounded-br-3xl rounded-bl-3xl" alt="Placeholder 2" />
+              <img src={userProfile} className="h-full rounded-br-3xl rounded-bl-3xl" alt="Placeholder 2" />
             </div>
           </div>
 
           <div className="h-[43%] w-full rounded-3xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
             <div className="flex flex-col h-full w-full bg-black overflow-hidden rounded-3xl">
               <h1 className="text-lg py-2 text-center font-black text-white">Instant Messaging</h1>
-              <img src={instantMessaging} className="rounded-br-3xl rounded-bl-3xl" alt="Placeholder 2" />
+              <img src={instantMessaging} className="h-full rounded-br-3xl rounded-bl-3xl" alt="Placeholder 2" />
             </div>
           </div>
         </div>

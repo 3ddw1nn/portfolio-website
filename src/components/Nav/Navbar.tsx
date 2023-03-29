@@ -106,7 +106,7 @@ const Navbar: React.FC = () => {
               })}
             </div>
             <Menu as="div" className="relative inline-block text-left">
-              <div>
+              <div className="flex justify-center text-center items-center">
                 <Menu.Button className=" text-xl bg-transparent flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:border-gray-700 dark:hover:bg-transparent md:dark:hover:bg-transparent">
                   Projects
                   <svg
@@ -134,8 +134,8 @@ const Navbar: React.FC = () => {
                 leaveFrom="transform opacity-100 scale-100"
                 leaveTo="transform opacity-0 scale-95"
               >
-                <Menu.Items className="from-black/35 to-transparent bg-gradient-to-b py-2 md:absolute right--0 z-10 mt-2 w-44 font-normal origin-top-right divide-gray-600 rounded-md bg-transparent focus:outline-none">
-                  <div className="py-2 text-sm">
+                <Menu.Items className="from-black/35 flex justify-center to-transparent bg-gradient-to-b py-2 md:absolute right--0 z-10 mt-2 w-44 font-normal origin-top-right divide-gray-600 rounded-md bg-transparent focus:outline-none">
+                  <div className="sm:mx-0 mx-4py-2 text-sm">
                     {dropdown.map((link: DirectLink, index) => {
                       return (
                         <Menu.Item key={index}>
@@ -154,7 +154,7 @@ const Navbar: React.FC = () => {
             </Menu>
             {links.map((link: DirectLink, index) => {
               return (
-                <div key={index} className="md:ml-8 text-white text-xl md:my-0 my-7">
+                <div key={index} className="md:ml-8  text-white text-xl md:my-0 my-7">
                   <a
                     href={link.href}
                     className="[text-shadow:_0_1px_0_rgb(0_0_0_/_60%)] text-gray-400 hover:text-white duration-500"

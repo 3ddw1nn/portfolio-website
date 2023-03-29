@@ -46,11 +46,11 @@ const PostIt: React.FC = () => {
   //   setIsVisible(true);
   // }
   return (
-    <div className="">
+    <div className="bg-black">
       <div className="text-white mt-24  ">
         <div className=" flex flex-wrap flex-col sm:h-[350px] sm:flex-row items-center">
-          <div className="flex flex-col w-full sm:items-center sm:justify-center sm:flex-row justify-center items-center text-center sm:text-left">
-            <h1 className=" text-[2.5rem] font-bold leading-tight ">
+          <div className="flex flex-col w-full  sm:items-center sm:justify-center sm:flex-row justify-center items-center text-center sm:text-left">
+            <h1 className="sm:mx-0 mx-6 sm:text-[2.5rem] text-3xl font-bold leading-tight ">
               Connecting locals to discover nearby social points of interest
             </h1>
             {/* <img className=" h-[400px]" src={iphonestock}></img> */}
@@ -163,7 +163,7 @@ const PostIt: React.FC = () => {
         </div>
       </div>
       {/* Device Sizes */}
-      <div ref={ref} className="flex sm:items-center sm:-mt-[20rem] -mt-[14rem] mb-20 sm:px-14">
+      <div ref={ref} className="flex sm:items-center sm:-mt-[20rem] -mt-[14rem] mb-10 sm:px-14">
         <div
           className={`w-2/3 sm:w-2/3 sm:h-1/2 px-4  ${
             inView
@@ -193,7 +193,7 @@ const PostIt: React.FC = () => {
         </div>
       </div>
       <div className="text-white flex flex-wrap justify-center">
-        <h3 className="text-3xl font-bold leading-none mb-8"> Data Integration</h3>
+        <h3 className="text-3xl font-bold leading-none my-10"> Data Integration</h3>
         <p className="text-lg px-16 sm:pb-8 pb-0">
           Post It provides listings that are created from users and are verified through Post It's data management team.
           To create a listing, a user must provide a caption, an address, a description, and photos/videos. These
@@ -206,14 +206,14 @@ const PostIt: React.FC = () => {
       <div className="text-white flex flex-wrap justify-center">
         <h3 className="text-3xl font-bold leading-none mb-11"> Desktop</h3>
       </div>
-      <div className="flex justify-center mx-20 mb-6 ">
+      <div className="flex justify-center sm:mx-20 mx-4 mb-6 ">
         <div className="sm:grid sm:grid-cols-2 sm:gap-6 flex flex-col sm:space-y-0 space-y-4">
           <div ref={ref2}>
             <div
               className={`rounded-xl ${
                 inView2
                   ? "opacity-100 transform translate-y-0 transition-all duration-1000 delay-100 ease-in-out"
-                  : "opacity-0 -translate-x-12"
+                  : "opacity-0 sm:-translate-x-12 translate-y-10"
               }`}
             >
               <img src={screenShot1} className="rounded-xl " alt="Placeholder 1" />
@@ -223,7 +223,7 @@ const PostIt: React.FC = () => {
             className={`rounded-xl ${
               inView2
                 ? "opacity-100 transform translate-y-0 transition-all duration-1000 delay-100 ease-in-out"
-                : "opacity-0 translate-x-12"
+                : "opacity-0 sm:translate-x-12 translate-y-10"
             }`}
           >
             <img src={screenShot2} className="rounded-xl " alt="Placeholder 1" />
@@ -233,7 +233,7 @@ const PostIt: React.FC = () => {
               className={`rounded-xl ${
                 inView3
                   ? "opacity-100 transform translate-y-0 transition-all duration-1000 delay-100 ease-in-out"
-                  : "opacity-0 -translate-x-12"
+                  : "opacity-0 sm:-translate-x-12 translate-y-10"
               }`}
             >
               <img src={screenShot3} className="rounded-xl " alt="Placeholder 1" />
@@ -244,7 +244,7 @@ const PostIt: React.FC = () => {
               className={`rounded-xl ${
                 inView4
                   ? "opacity-100 transform translate-y-0 transition-all duration-1000 delay-100 ease-in-out"
-                  : "opacity-0 translate-x-12"
+                  : "opacity-0 sm:translate-x-12 translate-y-10"
               }`}
             >
               <img src={screenShot4} className="rounded-xl " alt="Placeholder 1" />
@@ -253,9 +253,9 @@ const PostIt: React.FC = () => {
         </div>
       </div>
       <div className="text-white flex flex-wrap justify-center">
-        <h3 className="text-3xl font-bold leading-none mt-8"> Mobile</h3>
+        <h3 className="text-3xl font-bold leading-none my-8"> Mobile</h3>
       </div>
-      <div ref={ref5} className="flex justify-center ">
+      <div ref={ref5} className="flex justify-center sm:space-x-0 space-x-2 ">
         <div
           className={`flex flex-col w-1/5 justify-center text-center ${
             inView5
@@ -264,7 +264,7 @@ const PostIt: React.FC = () => {
           }`}
         >
           <img src={mobile_log_in} className="p-0" alt="Placeholder 1" />
-          <div className="text-2xl text-white font-bold leading-none ">Log In</div>
+          <div className="sm:text-2xl text-lg  text-white font-bold leading-none ">Log In</div>
         </div>
         <div
           className={`flex flex-col w-1/5 justify-center text-center ${
@@ -274,7 +274,7 @@ const PostIt: React.FC = () => {
           }`}
         >
           <img src={mobile_search} className="p-0" alt="Placeholder 1" />
-          <div className="text-2xl text-white font-bold leading-none ">Search</div>
+          <div className="sm:text-2xl text-lg  text-white font-bold leading-none ">Search</div>
         </div>
         <div
           className={`flex flex-col w-1/5 justify-center text-center ${
@@ -284,25 +284,27 @@ const PostIt: React.FC = () => {
           }`}
         >
           <img src={mobile_map} className="p-0" alt="Placeholder 1" />
-          <div className="text-2xl text-white font-bold leading-none ">Map</div>
+          <div className="sm:text-2xl text-lg  text-white font-bold leading-none ">Map</div>
         </div>
         <div
-          className={`flex flex-col w-1/5 justify-center text-center ${
+          className={`flex flex-col w-1/5 justify-center  text-center ${
             inView5
               ? "opacity-100 transform translate-y-0 transition-all duration-1000 delay-[700ms] ease-in-out"
               : "opacity-0 translate-y-12"
           }`}
         >
           <img src={mobile_create_post} className="p-0" alt="Placeholder 1" />
-          <div className="text-2xl text-white font-bold leading-none ">Create Post</div>
+          <div className="sm:text-2xl text-lg flex justify-center whitespace-nowrap text-white sm:font-bold leading-none ">
+            Create Post
+          </div>
         </div>
       </div>
-      <div className="text-white flex flex-wrap justify-center mt-12">
-        <h3 className="text-3xl font-bold leading-none mb-8"> Instant Messaging</h3>
+      <div className="text-white flex sm:flex-wrap justify-center mt-12">
+        <h3 className="text-3xl font-bold leading-none sm:mb-8"> Instant Messaging</h3>
       </div>
-      <div ref={ref6} className="flex justify-center mr-11 ">
+      <div ref={ref6} className="flex sm:flex-row flex-col items-center justify-center mb-20 sm:mr-11 ">
         <div
-          className={`flex w-1/5 justify-center text-center ${
+          className={`flex sm:w-1/5 w-full sm:mt-0 -mt-6 justify-center text-center ${
             inView6
               ? "opacity-100 transform translate-y-0 transition-all duration-1000 delay-[700ms] ease-in-out"
               : "opacity-0 translate-y-12"
@@ -311,7 +313,7 @@ const PostIt: React.FC = () => {
           <img src={mobile_im2} className="p-0" alt="Placeholder 1" />
         </div>
         <div
-          className={`flex w-1/5 justify-center text-center ${
+          className={`flex sm:w-1/5 w-full sm:mt-0 -mt-24 justify-center text-center ${
             inView6
               ? "opacity-100 transform translate-y-0 transition-all duration-1000 delay-[700ms] ease-in-out"
               : "opacity-0 translate-y-12"
@@ -320,7 +322,7 @@ const PostIt: React.FC = () => {
           <img src={mobile_im} className="p-0" alt="Placeholder 1" />
         </div>
         <div
-          className={`flex w-2/3 justify-center text-center ${
+          className={`flex sm:w-2/3 w-full sm:px-0 px-4 justify-center text-center ${
             inView6
               ? "opacity-100 transform translate-y-0 transition-all duration-1000 delay-[700ms] ease-in-out"
               : "opacity-0 translate-y-12"
