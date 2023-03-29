@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import iphonestock from "./images/iphoneStock.png";
 //@ts-ignore
 import hoverEffect from "hover-effect";
-import image from "./images/image.jpg";
+import postItImage2 from "./images/postItUI2.png";
+import postItImage from "./images/postItUI.jpg";
 import image2 from "./images/image2.jpg";
 import overlay from "./images/overlay.png";
 import "./styles/ui-ux.css";
@@ -10,19 +11,10 @@ import "./styles/ui-ux.css";
 const UI_UX = () => {
   useEffect(() => {
     var image_animate = new hoverEffect({
-      parent: document.querySelector("#item-image"),
-      intensity: 0.3,
-      image1: image,
-      image2: image2,
-      displacementImage: overlay,
-    });
-  });
-  useEffect(() => {
-    var image_animate = new hoverEffect({
       parent: document.querySelector("#postit-image"),
       intensity: 0.3,
-      image1: image,
-      image2: image2,
+      image1: postItImage,
+      image2: postItImage2,
       displacementImage: overlay,
     });
   });
@@ -46,7 +38,7 @@ const UI_UX = () => {
             <a
               href="/portfolio/ui_ux/postit"
               id="postit-image"
-              className="bg-no-repeat flex justify-center items-center h-[300px]  sm:h-[300px]  sm:w-full"
+              className="bg-no-repeat flex justify-center items-center h-[300px] sm:h-[300px]  sm:w-fulla"
             ></a>
           </div>
           <div className="flex w-1/3 justify-center">

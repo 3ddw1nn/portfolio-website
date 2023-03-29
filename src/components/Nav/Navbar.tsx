@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
             </button>
           </div>
           <ul
-            className={`md:flex text-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] w-full md:w-auto pr-8 transition-all duration-500 ease-in ${
+            className={`md:flex text-center md:pb-0 pb-8 absolute md:static md:z-auto z-[-1] w-full md:w-auto pr-8 transition-all duration-500 ease-in ${
               navOpen ? "top-20 " : "top-[-490px]"
             }`}
           >
@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
               {sections.map((link, index) => {
                 if (link.path.startsWith("/")) {
                   return (
-                    <div key={index} className="md:ml-8 text-white text-xl md:my-0 my-7">
+                    <div key={index} className="md:ml-8 text-white text-xl md:my-0 ">
                       <Link
                         to={link.path}
                         className="[text-shadow:_0_1px_0_rgb(0_0_0_/_60%)] text-gray-400 hover:text-white duration-500"
@@ -154,7 +154,7 @@ const Navbar: React.FC = () => {
             </Menu>
             {links.map((link: DirectLink, index) => {
               return (
-                <div key={index} className="md:ml-8  text-white text-xl md:my-0 my-7">
+                <div key={index} className="md:ml-8  mr-7 text-white text-xl md:my-0 mt-7">
                   <a
                     href={link.href}
                     className="[text-shadow:_0_1px_0_rgb(0_0_0_/_60%)] text-gray-400 hover:text-white duration-500"

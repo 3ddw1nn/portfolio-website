@@ -1,7 +1,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { Images } from "../pages/portfolio/Portfolio.json";
-import screenShot1 from "/Code/images/CodingSample.jpg";
+import screenShot1 from "/Code/images/Coding.png";
 import screenShot2 from "/UI-UX/images/TravelWebsite.png";
 import screenShot3 from "/ArtCatalog/Akira.jpg";
 import screenShot4 from "/ArchCatalog/4.jpg";
