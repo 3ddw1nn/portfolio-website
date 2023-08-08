@@ -10,43 +10,21 @@ import "./App.css";
 import PostIt from "./pages/portfolio/UI_UX/PostIt";
 import Code from "./pages/portfolio/Code/Code";
 
-// import { IParallax, Parallax, ParallaxLayer } from "@react-spring/parallax";
-
-// let element: IParallax | null;
-
-// interface scrollSectionProps {
-//   scrollSection: () => void;
-// }
-
-// const scrollID = (position: number) => {
-//   // console.log("scroll to working the position is " + position);
-//   element?.scrollTo(3);
-//   console.log(position);
-//   // thisthing = position;
-//   // console.log(thisthing);
-//   return position;
-// };
-// const handleScrollID = () => {};
-
-const App: React.FC = () => {
+const App = () => {
   return (
     <div>
-      <Navbar
-      // scrollID={(position) => {
-      //   scrollID(position);
-      // }}
-      />
-
+      <Navbar />
       <Routes>
         {/* public routes */}
         <Route path="/" element={<Home />} />
         <Route path="/portfolio/illustration" element={<Illustration />} />
         <Route path="/portfolio/architecture" element={<Architecture />} />
-        <Route path="/portfolio/ui_ux" element={<UI_UX />} />
+        <Route path="/portfolio/ui-ux" element={<UI_UX />} />
         <Route path="/portfolio/code" element={<Code />} />
         <Route path="/portfolio/ui_ux/postit" element={<PostIt />} />
 
         {/* catch all */}
+
         <Route path="*" element={<Missing />} />
       </Routes>
     </div>
@@ -54,14 +32,3 @@ const App: React.FC = () => {
 };
 
 export default App;
-
-// {/* <header>
-// <Navbar />
-// </header>
-// <Routes>
-// {/* public routes */}
-// <Route path="/" element={<Home />} />
-
-// {/* catch all */}
-// <Route path="*" element={<Missing />} />
-// </Routes> */}

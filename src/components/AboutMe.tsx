@@ -8,11 +8,11 @@ function AboutMe() {
   });
   return (
     <div>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col pt-24 justify-center items-center">
         <div className="profilePhoto relative overflow-hidden w-[200px] h-[200px] md:w-[400px] md:h-[400px] text-white "></div>
         <div className="sm:pt-10 pt-3 flex flex-col items-center justify-center bg-cool-gray-700 z-0">
           <h1 className="text-4xl font-black text-white text-center">
-            <section className="container">
+            <section className="container px-8">
               <div className="bg-gradient-to-r bg-clip-text from-green-400 to-purple-500">
                 <div className="sm:pt-9 ">FULL STACK SOFTWARE ENGINEER</div>
               </div>
@@ -25,8 +25,8 @@ function AboutMe() {
             </section>
           </h1>
         </div>
-        <div className=" flex justify-centerabsolute top-[350px] sm:top-[600px] sm:w-96 text-white">
-          <div className=" text-xl items-center text-center px-5 pb-6">
+        <div className=" flex justify-centerabsolute mt-[-90px] text-white">
+          <div className=" text-l text-left text-center px-11 pb-6">
             <h1 className="">
               <span ref={reference} className={`pr-1 opacity-0 ${inView ? "infoParagraph" : ""}`}>
                 I'm

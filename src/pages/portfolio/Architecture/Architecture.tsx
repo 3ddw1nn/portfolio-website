@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ArchCatalog } from "./ArchCatalog.json";
 
 import "./gallery.css";
+import Footer from "../../../components/Footer/Footer";
 // type Image = {
 //   name: string;
 //   src: string;
@@ -22,7 +23,7 @@ const Architecture = () => {
   return (
     <div className="bg-black mt-20">
       <div className={model ? "model open" : "model"}>
-        <img src={tempImgSrc} />
+        <img loading="lazy" src={tempImgSrc} />
         <div>
           <svg
             className="w-12 fixed top-0 right-2.5 p-1 bg-transparent cursor-pointer"
@@ -54,6 +55,7 @@ const Architecture = () => {
                   </div>
                 </div>
                 <img
+                  loading="lazy"
                   className="object-cover w-full h-full group-hover:scale-150 transition duration-500 ease-in-out"
                   src={image.src}
                 />
@@ -62,6 +64,7 @@ const Architecture = () => {
           );
         })}
       </div>
+      <Footer />
     </div>
   );
 };

@@ -1,26 +1,30 @@
 {
   "Images": [
     {
-      "name": "Coding",
+      "name": "Code",
       "src": "/Code/images/Coding.png",
+      "link": "code",
       "date": "2017",
       "description": "Hand drawn with ink. Then digitally rendered in Photoshop"
     },
     {
       "name": "UI/UX",
       "src": "/UI-UX/images/TravelWebsite.png",
+      "link": "ui_ux",
       "date": "2017",
       "description": "Hand drawn with ink. Then digitally rendered in Photoshop"
     },
     {
       "name": "Illustration",
       "src": "/ArtCatalog/Akira.jpg",
+      "link": "illustration",
       "date": "2017",
       "description": "Hand drawn with ink. Then digitally rendered in Photoshop"
     },
     {
       "name": "Architecture",
       "src": "/ArchCatalog/4.jpg",
+      "link": "architecture",
       "date": "2016",
       "description": "And advertisement piece done digitally in photoshop "
     }

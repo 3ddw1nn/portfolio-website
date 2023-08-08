@@ -44,21 +44,21 @@ function Reel() {
               <SwiperSlide className="">
                 {" "}
                 <div className=" ">
-                  <img src={img} alt="" />
+                  <img loading="lazy" src={img} alt="" />
                   <h1 className="font-bold text-2xl my-2">Global</h1>
                 </div>
               </SwiperSlide>
               <SwiperSlide className=" ">
                 {" "}
                 <div className=" ">
-                  <img src={img} alt="" />
+                  <img loading="lazy" src={img} alt="" />
                   <h1 className="font-bold text-2xl my-2">North America </h1>
                 </div>
               </SwiperSlide>
               <SwiperSlide className=" ">
                 {" "}
                 <div className=" ">
-                  <img src={img} alt="" />
+                  <img loading="lazy" src={img} alt="" />
                   <h1 className="font-bold text-2xl my-2">US</h1>
                 </div>
               </SwiperSlide>
@@ -66,14 +66,14 @@ function Reel() {
               <SwiperSlide className=" ">
                 {" "}
                 <div className=" ">
-                  <img src={img} alt="" />
+                  <img loading="lazy" src={img} alt="" />
                   <h1 className="font-bold text-2xl my-2">California</h1>
                 </div>
               </SwiperSlide>
               <SwiperSlide className=" ">
                 {" "}
                 <div className=" ">
-                  <img src={img} alt="" />
+                  <img loading="lazy" src={img} alt="" />
                   <h1 className="font-bold text-2xl my-2">Los Angeles</h1>
                 </div>
               </SwiperSlide>

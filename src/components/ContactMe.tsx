@@ -30,7 +30,7 @@ export const ContactMe = () => {
   };
 
   return (
-    <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+    <div className="py-8 lg:py-16 px-12 w-full">
       <h2 className="mb-4 ">
         <TextEffect1 />
       </h2>
@@ -78,7 +78,7 @@ export const ContactMe = () => {
         </div>
         <button
           type="submit"
-          className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-teal-500 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+          className="relative py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-teal-500 sm:w-fit"
         >
           Send message
         </button>

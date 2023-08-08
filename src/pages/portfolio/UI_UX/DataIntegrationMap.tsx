@@ -67,6 +67,7 @@ function DataIntegrationMap() {
           </div>
         </div>
         <img
+          loading="lazy"
           ref={refMobile2}
           src={rightArrow}
           className={`rotate-90 mx-4 w-10 ${
@@ -91,6 +92,7 @@ function DataIntegrationMap() {
           </div>
         </div>
         <img
+          loading="lazy"
           ref={refMobile4}
           src={rightArrow}
           className={`rotate-90 mx-4 w-10 ${
@@ -111,11 +113,12 @@ function DataIntegrationMap() {
           <div className="h-1/2 w-full rounded-3xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
             <div className="flex flex-col h-full w-full bg-black overflow-hidden rounded-3xl">
               <h1 className="text-lg py-2 text-center font-black text-white">Section Map</h1>
-              <img src={sectionMap} className="rounded-br-3xl rounded-bl-3xl" alt="Placeholder 2" />
+              <img loading="lazy" src={sectionMap} className="rounded-br-3xl rounded-bl-3xl" alt="Placeholder 2" />
             </div>
           </div>
         </div>
         <img
+          loading="lazy"
           ref={refMobile6}
           src={bracketArrow}
           className={` w-full ${
@@ -138,12 +141,18 @@ function DataIntegrationMap() {
             <div className="w-full  rounded-3xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
               <div className="flex flex-col w-full bg-black rounded-3xl">
                 <h1 className="text-lg py-2 text-center font-black text-white">Listing</h1>
-                <img src={userListing} className="rounded-br-3xl w-full h-full  rounded-bl-3xl " alt="Placeholder 2" />
+                <img
+                  loading="lazy"
+                  src={userListing}
+                  className="rounded-br-3xl w-full h-full  rounded-bl-3xl "
+                  alt="Placeholder 2"
+                />
               </div>
             </div>
           </div>
         </div>
         <img
+          loading="lazy"
           ref={refMobile8}
           src={rightArrow}
           className={`rotate-90 mx-4 w-10 ${
@@ -165,12 +174,18 @@ function DataIntegrationMap() {
             <div className="w-full  rounded-3xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
               <div className="flex  flex-col w-full bg-black rounded-3xl">
                 <h1 className="text-lg py-2 text-center font-black text-white">User Network</h1>
-                <img src={userNetwork} className="rounded-br-3xl w-full h-full  rounded-bl-3xl " alt="Placeholder 2" />
+                <img
+                  loading="lazy"
+                  src={userNetwork}
+                  className="rounded-br-3xl w-full h-full  rounded-bl-3xl "
+                  alt="Placeholder 2"
+                />
               </div>
             </div>
           </div>
         </div>
         <img
+          loading="lazy"
           ref={refMobile10}
           src={splitArrow}
           className={`rotate-180 mx-4 w-24 ${
@@ -191,7 +206,12 @@ function DataIntegrationMap() {
             <div className=" w-full rounded-3xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
               <div className="flex flex-col h-full w-full bg-black overflow-hidden rounded-3xl">
                 <h1 className="text-lg py-2 text-center font-black text-white">User Profile</h1>
-                <img src={userProfile} className="h-full rounded-br-3xl rounded-bl-3xl" alt="Placeholder 2" />
+                <img
+                  loading="lazy"
+                  src={userProfile}
+                  className="h-full rounded-br-3xl rounded-bl-3xl"
+                  alt="Placeholder 2"
+                />
               </div>
             </div>
           </div>
@@ -205,7 +225,12 @@ function DataIntegrationMap() {
             <div className="w-full rounded-3xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
               <div className="flex flex-col h-full w-full bg-black overflow-hidden rounded-3xl">
                 <h1 className="text-lg py-2 text-center font-black text-white">Instant Messaging</h1>
-                <img src={instantMessaging} className="rounded-br-3xl rounded-bl-3xl" alt="Placeholder 2" />
+                <img
+                  loading="lazy"
+                  src={instantMessaging}
+                  className="rounded-br-3xl rounded-bl-3xl"
+                  alt="Placeholder 2"
+                />
               </div>
             </div>
           </div>
@@ -228,6 +253,7 @@ function DataIntegrationMap() {
               </div>
             </div>
             <img
+              loading="lazy"
               src={rightArrow}
               className={`mx-4 w-10 ${
                 inViewD1
@@ -244,6 +270,7 @@ function DataIntegrationMap() {
               </div>
             </div>
             <img
+              loading="lazy"
               src={rightArrow}
               className={`mx-4 w-10 ${
                 inViewD1
@@ -261,6 +288,7 @@ function DataIntegrationMap() {
               </div>
             </div>
             <img
+              loading="lazy"
               src={rightArrow}
               className={`mx-4 w-10 ${
                 inViewD1
@@ -288,6 +316,7 @@ function DataIntegrationMap() {
               </div>
             </div>
             <img
+              loading="lazy"
               src={rightArrow}
               className={`mx-4 w-10 ${
                 inViewD1
@@ -310,11 +339,17 @@ function DataIntegrationMap() {
             <div className="w-full  rounded-3xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
               <div className="flex  flex-col w-full bg-black rounded-3xl">
                 <h1 className="text-lg py-2 text-center font-black text-white">User Network</h1>
-                <img src={userNetwork} className="rounded-br-3xl w-full h-full  rounded-bl-3xl " alt="Placeholder 2" />
+                <img
+                  loading="lazy"
+                  src={userNetwork}
+                  className="rounded-br-3xl w-full h-full  rounded-bl-3xl "
+                  alt="Placeholder 2"
+                />
               </div>
             </div>
             <div className="flex flex-col space-y-[9rem]">
               <img
+                loading="lazy"
                 src={rightArrow}
                 className={`mx-4 w-10 ${
                   inViewD1
@@ -324,6 +359,7 @@ function DataIntegrationMap() {
                 alt="Placeholder 2"
               />
               <img
+                loading="lazy"
                 src={rightArrow}
                 className={`mx-4 w-10 ${
                   inViewD1
@@ -346,14 +382,24 @@ function DataIntegrationMap() {
           <div className="h-[43%] w-full rounded-3xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
             <div className="flex flex-col h-full w-full bg-black overflow-hidden rounded-3xl">
               <h1 className="text-lg py-2 text-center font-black text-white">User Profile</h1>
-              <img src={userProfile} className="h-full rounded-br-3xl rounded-bl-3xl" alt="Placeholder 2" />
+              <img
+                loading="lazy"
+                src={userProfile}
+                className="h-full rounded-br-3xl rounded-bl-3xl"
+                alt="Placeholder 2"
+              />
             </div>
           </div>
 
           <div className="h-[43%] w-full rounded-3xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
             <div className="flex flex-col h-full w-full bg-black overflow-hidden rounded-3xl">
               <h1 className="text-lg py-2 text-center font-black text-white">Instant Messaging</h1>
-              <img src={instantMessaging} className="h-full rounded-br-3xl rounded-bl-3xl" alt="Placeholder 2" />
+              <img
+                loading="lazy"
+                src={instantMessaging}
+                className="h-full rounded-br-3xl rounded-bl-3xl"
+                alt="Placeholder 2"
+              />
             </div>
           </div>
         </div>
