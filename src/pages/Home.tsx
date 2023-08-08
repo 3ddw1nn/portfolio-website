@@ -8,7 +8,7 @@ import MiddleStars from "../assets/ParallaxImages/MiddleStars.png";
 import BigStars from "../assets/ParallaxImages/BigStars.png";
 import Stars from "../assets/ParallaxImages/Stars.png";
 
-import "./infoAnimation.css";
+import "./InfoAnimation.css";
 import "./multiTextAnimation.css";
 import "./borderAnimation.css";
 import "./myPortfolioAnimation.css";
