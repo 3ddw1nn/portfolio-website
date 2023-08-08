@@ -39,46 +39,46 @@ export const ContactMe = () => {
       </p>
       <form ref={form} onSubmit={sendEmail} className="space-y-8">
         <div>
-          <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+          <label htmlFor="email" className="block mb-2 text-md font-medium text-gray-900 dark:text-gray-300">
             Your email
           </label>
           <input
             type="email"
             id="email"
             name="email"
-            className="block p-3 w-full text-sm text-white bg-gradient-135 from-slate-900 to-gray-800 rounded-lg border border-gray-600  focus:ring-primary-500 focus:border-primary-500"
+            className="block p-3 w-full text-md text-white bg-gradient-135 from-slate-900 to-gray-800 rounded-lg border border-gray-600  focus:ring-primary-500 focus:border-primary-500"
             placeholder="example@mail.com"
             required
           ></input>
         </div>
         <div>
-          <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+          <label htmlFor="subject" className="block mb-2 text-md font-medium text-gray-900 dark:text-gray-300">
             Subject
           </label>
           <input
             type="text"
             id="subject"
             name="subject"
-            className="block p-3 w-full text-sm text-white bg-gradient-135 from-slate-900 to-gray-800 rounded-lg border border-gray-600  focus:ring-primary-500 focus:border-primary-500"
+            className="block p-3 w-full text-md text-white bg-gradient-135 from-slate-900 to-gray-800 rounded-lg border border-gray-600  focus:ring-primary-500 focus:border-primary-500"
             placeholder="Let me know how I can help you"
             required
           ></input>
         </div>
         <div className="sm:col-span-2">
-          <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 ">
+          <label htmlFor="message" className="block mb-2 text-md font-medium text-gray-900 ">
             Your message
           </label>
           <textarea
             id="message"
             name="message"
             rows={6}
-            className="block p-3 w-full text-sm text-white bg-gradient-135 from-slate-900 to-gray-800 rounded-lg border border-gray-600  focus:ring-primary-500 focus:border-primary-500"
+            className="block p-3 w-full text-md text-white bg-gradient-135 from-slate-900 to-gray-800 rounded-lg border border-gray-600  focus:ring-primary-500 focus:border-primary-500"
             placeholder="Leave a message or a comment..."
           ></textarea>
         </div>
         <button
           type="submit"
-          className="relative py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-teal-500 sm:w-fit"
+          className="relative py-3 px-5 text-md font-medium text-center text-white rounded-lg bg-teal-500 sm:w-fit"
         >
           Send message
         </button>
