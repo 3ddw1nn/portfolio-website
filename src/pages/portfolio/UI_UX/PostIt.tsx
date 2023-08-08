@@ -171,7 +171,7 @@ const PostIt: React.FC = () => {
               : "opacity-0 translate-y-12"
           }`}
         >
-          <img src={iMac} className=" sm:w-full " alt="Placeholder 1" />
+          <img loading="lazy" src={iMac} className=" sm:w-full " alt="Placeholder 1" />
         </div>
         <div
           className={`w-1/3 sm:w-1/3 sm:pl-8 ${
@@ -180,7 +180,7 @@ const PostIt: React.FC = () => {
               : "opacity-0 translate-y-12"
           }`}
         >
-          <img src={tablet} className="sm:w-full " alt="Placeholder 2" />
+          <img loading="lazy" src={tablet} className="sm:w-full " alt="Placeholder 2" />
         </div>
         <div
           className={`w-1/3 sm:w-1/4 px-4 ${
@@ -189,7 +189,7 @@ const PostIt: React.FC = () => {
               : "opacity-0 translate-y-12"
           }`}
         >
-          <img src={mobile} className=" sm:w-full h-auto" alt="Placeholder 3" />
+          <img loading="lazy" src={mobile} className=" sm:w-full h-auto" alt="Placeholder 3" />
         </div>
       </div>
       <div className="text-white flex flex-wrap justify-center">
@@ -216,7 +216,7 @@ const PostIt: React.FC = () => {
                   : "opacity-0 sm:-translate-x-12 translate-y-10"
               }`}
             >
-              <img src={screenShot1} className="rounded-xl " alt="Placeholder 1" />
+              <img loading="lazy" src={screenShot1} className="rounded-xl " alt="Placeholder 1" />
             </div>
           </div>
           <div
@@ -226,7 +226,7 @@ const PostIt: React.FC = () => {
                 : "opacity-0 sm:translate-x-12 translate-y-10"
             }`}
           >
-            <img src={screenShot2} className="rounded-xl " alt="Placeholder 1" />
+            <img loading="lazy" src={screenShot2} className="rounded-xl " alt="Placeholder 1" />
           </div>
           <div ref={ref3}>
             <div
@@ -236,7 +236,7 @@ const PostIt: React.FC = () => {
                   : "opacity-0 sm:-translate-x-12 translate-y-10"
               }`}
             >
-              <img src={screenShot3} className="rounded-xl " alt="Placeholder 1" />
+              <img loading="lazy" src={screenShot3} className="rounded-xl " alt="Placeholder 1" />
             </div>
           </div>
           <div ref={ref4}>
@@ -247,7 +247,7 @@ const PostIt: React.FC = () => {
                   : "opacity-0 sm:translate-x-12 translate-y-10"
               }`}
             >
-              <img src={screenShot4} className="rounded-xl " alt="Placeholder 1" />
+              <img loading="lazy" src={screenShot4} className="rounded-xl " alt="Placeholder 1" />
             </div>
           </div>
         </div>
@@ -263,7 +263,7 @@ const PostIt: React.FC = () => {
               : "opacity-0 translate-y-12"
           }`}
         >
-          <img src={mobile_log_in} className="p-0" alt="Placeholder 1" />
+          <img loading="lazy" src={mobile_log_in} className="p-0" alt="Placeholder 1" />
           <div className="sm:text-2xl text-lg  text-white font-bold leading-none ">Log In</div>
         </div>
         <div
@@ -273,7 +273,7 @@ const PostIt: React.FC = () => {
               : "opacity-0 translate-y-12"
           }`}
         >
-          <img src={mobile_search} className="p-0" alt="Placeholder 1" />
+          <img loading="lazy" src={mobile_search} className="p-0" alt="Placeholder 1" />
           <div className="sm:text-2xl text-lg  text-white font-bold leading-none ">Search</div>
         </div>
         <div
@@ -283,7 +283,7 @@ const PostIt: React.FC = () => {
               : "opacity-0 translate-y-12"
           }`}
         >
-          <img src={mobile_map} className="p-0" alt="Placeholder 1" />
+          <img loading="lazy" src={mobile_map} className="p-0" alt="Placeholder 1" />
           <div className="sm:text-2xl text-lg  text-white font-bold leading-none ">Map</div>
         </div>
         <div
@@ -293,7 +293,7 @@ const PostIt: React.FC = () => {
               : "opacity-0 translate-y-12"
           }`}
         >
-          <img src={mobile_create_post} className="p-0" alt="Placeholder 1" />
+          <img loading="lazy" src={mobile_create_post} className="p-0" alt="Placeholder 1" />
           <div className="sm:text-2xl text-lg flex justify-center whitespace-nowrap text-white sm:font-bold leading-none ">
             Create Post
           </div>
@@ -310,7 +310,7 @@ const PostIt: React.FC = () => {
               : "opacity-0 translate-y-12"
           }`}
         >
-          <img src={mobile_im2} className="p-0" alt="Placeholder 1" />
+          <img loading="lazy" src={mobile_im2} className="p-0" alt="Placeholder 1" />
         </div>
         <div
           className={`flex sm:w-1/5 w-full sm:mt-0 -mt-24 justify-center text-center ${
@@ -319,7 +319,7 @@ const PostIt: React.FC = () => {
               : "opacity-0 translate-y-12"
           }`}
         >
-          <img src={mobile_im} className="p-0" alt="Placeholder 1" />
+          <img loading="lazy" src={mobile_im} className="p-0" alt="Placeholder 1" />
         </div>
         <div
           className={`flex sm:w-2/3 w-full sm:px-0 px-4 justify-center text-center ${
@@ -328,7 +328,7 @@ const PostIt: React.FC = () => {
               : "opacity-0 translate-y-12"
           }`}
         >
-          <img src={desktop_Im} className="p-0 rounded-xl" alt="Placeholder 1" />
+          <img loading="lazy" src={desktop_Im} className="p-0 rounded-xl" alt="Placeholder 1" />
         </div>
       </div>
     </div>

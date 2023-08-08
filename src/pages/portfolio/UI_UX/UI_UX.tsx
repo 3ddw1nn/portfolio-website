@@ -7,6 +7,7 @@ import postItImage from "./images/postItUI.jpg";
 import image2 from "./images/image2.jpg";
 import overlay from "./images/overlay.png";
 import "./styles/ui-ux.css";
+import Footer from "../../../components/Footer/Footer";
 
 const UI_UX = () => {
   useEffect(() => {
@@ -49,6 +50,7 @@ const UI_UX = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

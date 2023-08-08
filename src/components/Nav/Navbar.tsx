@@ -1,11 +1,8 @@
-// import { Fragment } from "react";
-// import { Menu, Transition } from "@headlessui/react";
-import { Fragment } from "react";
-import { Menu, Transition } from "@headlessui/react";
-import { sections, links, dropdown } from "./links.json";
+import { Fragment, useEffect } from "react";
+import { sections, links } from "./links.json";
 import { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import { Link } from "react-router-dom";
 
 type DirectLink = {
   label: string;
@@ -16,34 +13,74 @@ function Icon({ id, open }: any) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`${id === open ? "rotate-180" : ""} h-7 w-7 transition-transform`}
+      className={`${id === open ? "rotate-180" : ""} h-4 w-4 transition-transform`}
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
       strokeWidth={2}
     >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+      <path strokeLinecap="square" strokeLinejoin="inherit" d="M19 9l-7 7-7-7" />
     </svg>
   );
 }
-interface scrollProps {
-  scrollID: (position: number) => void;
-}
 
 const Navbar: React.FC = () => {
-  const MobileNavButtonStyle = `h-1 w-8 my-1 rounded-full bg-white transition ease transform duration-300`;
+  const [showBackToTopButton, setShowBackToTopButton] = useState(false);
+  const MobileNavButtonStyle = `h-1 w-7 my-1  bg-white transition ease transform duration-300`;
   const [navOpen, setNavOpen] = useState(false);
+  const toggleMenu = () => {
+    setNavOpen(!navOpen);
+  };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 125) {
+        setShowBackToTopButton(true);
+      } else {
+        setShowBackToTopButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  const location = useLocation();
+
+  // Check if the current location is the home screen
 
   return (
-    <nav className="fixed z-10 py-4 flex w-full h-fit items-center justify-around  ">
-      <div className=" w-full fixed h-fit top-0 left-0 from-black/80 to-transparent bg-gradient-to-b">
-        <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
-          <a href="/" className=" ml-12 flex items-center">
-            <img src="/images/Logo.svg" className="h-14 mr-3 " alt="Logo" />
-            <p className="self-center text-xl font-semibold whitespace-nowrap text-white">Edward Lee</p>
-          </a>
-
-          <div onClick={() => setNavOpen(!navOpen)} className="absolute right-8 top-6 cursor-pointer md:hidden">
+    <nav
+      className={`${
+        navOpen
+          ? "pb-60 lg:pb-4 transition-all duration-[400ms] ease-in"
+          : "pb-4 transition-all  duration-[700ms] ease-out"
+      } fixed z-10 py-4 top-0 flex w-full border-b-[0.5px] border-slate-500 bg-black/30 shadow-sm backdrop-blur`}
+    >
+      <a href="/" className="flex pl-4 items-center">
+        <img loading="lazy" src="/images/Logo.svg" className="h-12 mr-3 " alt="Logo" />
+        <p className="text-xl font-semibold whitespace-nowrap text-white">Edward Lee</p>
+      </a>
+      <div className="lg:flex w-full lg:justify-end">
+        <div className="flex lg:items-center space-x-5 ">
+          {showBackToTopButton && (
+            <button
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+                setNavOpen(false);
+              }}
+              className={`text-white h-8 flex ml-[28%] lg:mt-0 mt-2.5 lg:ml-0 lg:items-center px-4 rounded-full border-2 border-slate-500 cursor-pointer"
+            }`}
+            >
+              Back to Top
+            </button>
+          )}
+          <div
+            onClick={() => setNavOpen(!navOpen)}
+            className="absolute right-8 scale-[80%] top-6 cursor-pointer lg:hidden"
+          >
             <button
               className="flex flex-col border-none rounded-lg justify-center items-center group"
               onClick={() => setNavOpen(!navOpen)}
@@ -67,94 +104,49 @@ const Navbar: React.FC = () => {
               />
             </button>
           </div>
+
           <ul
-            className={`md:flex text-center md:pb-0 pb-8 absolute md:static md:z-auto z-[-1] w-full md:w-auto pr-8 transition-all duration-500 ease-in ${
-              navOpen ? "top-20 " : "top-[-490px]"
+            className={`lg:flex text-center lg:pb-0 pb-8 absolute lg:static lg:z-auto z-[-1] w-full lg:w-auto transition-all ${
+              navOpen
+                ? "top-20 opacity-100 delay-[-100ms] duration-500 ease-in "
+                : "top-[-490px] opacity-100 flex  w-full duration-[900ms] ease-out "
             }`}
           >
-            <div className="flex mr-8 flex-col sm:flex-row">
+            <div className="flex mr-8 flex-col lg:space-x-12 sm:flex-row">
               {sections.map((link, index) => {
                 if (link.path.startsWith("/")) {
                   return (
-                    <div key={index} className="md:ml-8 text-white text-xl md:my-0 ">
-                      <Link
+                    <div key={index} className="text-white text-xl ">
+                      <HashLink
+                        onClick={() => toggleMenu}
+                        smooth
                         to={link.path}
                         className="[text-shadow:_0_1px_0_rgb(0_0_0_/_60%)] text-gray-400 hover:text-white duration-500"
                       >
                         {link.label}
-                      </Link>
+                      </HashLink>
                     </div>
                   );
                 } else {
                   return (
-                    <div key={index} className=" md:ml-8 text-white text-xl md:my-0 my-7">
-                      <Link
+                    <div key={index} className=" text-white text-xl my-3">
+                      <HashLink
+                        onClick={toggleMenu}
                         id={link.label}
-                        // onClick={() => {
-                        //   scrollID(link.sectionPosition);
-                        //   let position = link.sectionPosition;
-                        //   return position;
-                        // }}
+                        smooth
                         to={"/" + link.path}
                         className="[text-shadow:_0_1px_0_rgb(0_0_0_/_60%)] text-gray-400 hover:text-white duration-500"
                       >
                         {link.label}
-                      </Link>
+                      </HashLink>
                     </div>
                   );
                 }
               })}
             </div>
-            <Menu as="div" className="relative inline-block text-left">
-              <div className="flex justify-center text-center items-center">
-                <Menu.Button className=" text-xl bg-transparent flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:border-gray-700 dark:hover:bg-transparent md:dark:hover:bg-transparent">
-                  Projects
-                  <svg
-                    className="w-6 h-6"
-                    aria-hidden="true"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </Menu.Button>
-              </div>
-
-              <Transition
-                as={Fragment}
-                enter="transition ease-out duration-100"
-                enterFrom="transform opacity-0 scale-95"
-                enterTo="transform opacity-100 scale-100"
-                leave="transition ease-in duration-75"
-                leaveFrom="transform opacity-100 scale-100"
-                leaveTo="transform opacity-0 scale-95"
-              >
-                <Menu.Items className="from-black/35 flex justify-center to-transparent bg-gradient-to-b py-2 md:absolute right--0 z-10 mt-2 w-44 font-normal origin-top-right divide-gray-600 rounded-md bg-transparent focus:outline-none">
-                  <div className="sm:mx-0 mx-4py-2 text-sm">
-                    {dropdown.map((link: DirectLink, index) => {
-                      return (
-                        <Menu.Item key={index}>
-                          <a
-                            href={link.href}
-                            className="[text-shadow:_0_1px_0_rgb(0_0_0_/_60%)] text-lg text-gray-400 block px-4 py-2 dark:hover:text-white"
-                          >
-                            {link.label}
-                          </a>
-                        </Menu.Item>
-                      );
-                    })}
-                  </div>
-                </Menu.Items>
-              </Transition>
-            </Menu>
             {links.map((link: DirectLink, index) => {
               return (
-                <div key={index} className="md:ml-8  mr-7 text-white text-xl md:my-0 mt-7">
+                <div key={index} className=" text-white text-xl mx-5 mt-3">
                   <a
                     href={link.href}
                     className="[text-shadow:_0_1px_0_rgb(0_0_0_/_60%)] text-gray-400 hover:text-white duration-500"

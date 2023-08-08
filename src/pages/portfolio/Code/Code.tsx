@@ -16,6 +16,7 @@ import memoryCard from "./images/memoryCard.png";
 import weather from "./images/weatherApp.png";
 import task from "./images/task.png";
 import etchnsketch from "./images/etchnsketch.png";
+import Footer from "../../../components/Footer/Footer";
 const code = () => {
   useEffect(() => {
     var membersOnlyPhoto = new hoverEffect({
@@ -102,6 +103,7 @@ const code = () => {
       <header>
         <h1 className=" flex items-center text-4xl text-transparent text-center">
           <img
+            loading="lazy"
             className=" md:w-[850px] h-auto md:ml-0  -ml-[100px] bg-cover  bg-no-repeat mb-8 "
             src={planetBackground}
           ></img>
@@ -226,6 +228,7 @@ const code = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
