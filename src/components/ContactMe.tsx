@@ -65,14 +65,14 @@ export const ContactMe = () => {
           ></input>
         </div>
         <div className="sm:col-span-2">
-          <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">
+          <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 ">
             Your message
           </label>
           <textarea
             id="message"
             name="message"
             rows={6}
-            className="block p-3 w-full text-sm text-whites bg-gradient-135 from-slate-900 to-gray-800 rounded-lg border border-gray-600  focus:ring-primary-500 focus:border-primary-500"
+            className="block p-3 w-full text-sm text-white bg-gradient-135 from-slate-900 to-gray-800 rounded-lg border border-gray-600  focus:ring-primary-500 focus:border-primary-500"
             placeholder="Leave a message or a comment..."
           ></textarea>
         </div>
