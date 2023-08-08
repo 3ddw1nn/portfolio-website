@@ -16,8 +16,10 @@ import memoryCard from "./images/memoryCard.png";
 import weather from "./images/weatherApp.png";
 import task from "./images/task.png";
 import etchnsketch from "./images/etchnsketch.png";
-import Footer from "../../../components/Footer/Footer";
+import { useNavigate } from "react-router-dom";
+
 const code = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     var membersOnlyPhoto = new hoverEffect({
       parent: document.querySelector("#members-only-hover-photo"),
@@ -99,7 +101,7 @@ const code = () => {
     });
   });
   return (
-    <div className="bg-black">
+    <div className="bg-black mb-36">
       <header>
         <h1 className=" flex items-center text-4xl text-transparent text-center">
           <img
@@ -115,120 +117,167 @@ const code = () => {
         </h1>
       </header>
       <div className="space-y-8">
-        <div className=" mx-16 flex flex-col items-center border border-gray-700 rounded-3xl backdrop-blur-3xl box-border p-10 bg-gradient-135 from-slate-900 to-transparent shadow sm:flex-row ">
-          <div className=" sm:h-[300px] h-[250px] w-[200px] sm:bg-auto sm:w-[800px] rounded-3xl overflow-hidden">
-            <div
+        <div
+          onClick={() => {
+            navigate("/portfolio/ui_ux/postit");
+          }}
+          className="cursor-pointer mx-16 mb-6 md:mx-[100px] lg:mx-[400px] flex items-center border border-gray-700 pl-6 rounded-3xl backdrop-blur-3xl box-border lg:p-10 bg-gradient-135 from-slate-900 to-transparent shadow "
+        >
+          <div className="h-[100px] w-[100px] lg:h-[200px] lg:w-[200px] rounded-3xl overflow-hidden">
+            <a
+              href="/"
               id="blog-hover-photo"
-              className="bg-no-repeat flex justify-center items-center h-[300px]  sm:h-[300px]  sm:w-full"
-            ></div>
+              className="bg-no-repeat flex justify-center items-center lg:h-full w-full h-[100px]"
+            ></a>
           </div>
-          <div className="flex w-1/3 justify-center">
-            <div className="flex flex-col text-center justify-center ">
-              <h5 className="mb-2 mt-8 sm:mt-0 sm:ml-6 ml-0 text-2xl font-bold text-white">Blog</h5>
+          <div className="flex">
+            <div className="flex flex-col text-center px-6 lg:my-0 lg:ml-12 lg:justify-center lg:text-center my-6  ">
+              <h5 className="lg:mb-2 lg:mt-8 mt-4  lg:ml-5 text-2xl font-bold text-white">Blog</h5>
               <p className="mb-3  font-normal  sm:ml-6 ml-0 text-gray-400">Personal Blog Project</p>
             </div>
           </div>
         </div>
-        <div className=" mx-16 flex flex-col items-center border border-gray-700 rounded-3xl backdrop-blur-3xl box-border p-10 bg-gradient-135 from-slate-900 to-transparent shadow sm:flex-row ">
-          <div className=" sm:h-[300px] h-[250px] w-[200px]   sm:bg-auto sm:w-[800px] rounded-3xl overflow-hidden">
-            <div
+        <div
+          onClick={() => {
+            navigate("/portfolio/ui_ux/postit");
+          }}
+          className="cursor-pointer mx-16 mb-24 md:mx-[100px] lg:mx-[400px] flex items-center border border-gray-700 pl-6 rounded-3xl backdrop-blur-3xl box-border lg:p-10 bg-gradient-135 from-slate-900 to-transparent shadow "
+        >
+          <div className="h-[100px] w-[100px] lg:h-[200px] lg:w-[200px] rounded-3xl overflow-hidden">
+            <a
+              href="/"
               id="members-only-hover-photo"
-              className=" flex justify-center items-center h-[300px]  sm:h-[300px]  sm:w-full"
-            ></div>
+              className="bg-no-repeat flex justify-center items-center lg:h-full w-full h-[100px]"
+            ></a>
           </div>
-          <div className="flex w-1/3 justify-center">
-            <div className="flex flex-col text-center  justify-center ">
-              <h5 className="mb-2 mt-8 sm:mt-0 sm:ml-6 ml-0 text-2xl font-bold text-white">Members Only</h5>
+          <div className="flex">
+            <div className="flex flex-col text-center px-6 lg:my-0 my-6  ">
+              <h5 className="lg:mb-2 lg:mt-8 mt-4  lg:ml-5 text-2xl font-bold text-white">Members Only</h5>
               <p className="mb-3  font-normal  sm:ml-6 ml-0 text-gray-400">Personal Members Club Project</p>
             </div>
           </div>
         </div>
-        <div className=" mx-16 flex flex-col items-center border border-gray-700 rounded-3xl backdrop-blur-3xl box-border p-10 bg-gradient-135 from-slate-900 to-transparent shadow sm:flex-row ">
-          <div className=" sm:h-[300px] h-[250px] w-[200px]   sm:bg-auto sm:w-[800px] rounded-3xl overflow-hidden">
-            <div
+        <div
+          onClick={() => {
+            navigate("/portfolio/ui_ux/postit");
+          }}
+          className="cursor-pointer mx-16 mb-24 md:mx-[100px] lg:mx-[400px] flex items-center border border-gray-700 pl-6 rounded-3xl backdrop-blur-3xl box-border lg:p-10 bg-gradient-135 from-slate-900 to-transparent shadow "
+        >
+          <div className="h-[100px] w-[100px] lg:h-[200px] lg:w-[200px] rounded-3xl overflow-hidden">
+            <a
+              href="/"
               id="express-inventory-app"
-              className=" flex justify-center items-center h-[300px] sm:h-[300px]  sm:w-full"
-            ></div>
+              className="bg-no-repeat flex justify-center items-center lg:h-full w-full h-[100px]"
+            ></a>
           </div>
-          <div className="flex w-1/3 justify-center">
-            <div className="flex flex-col text-center  justify-center ">
-              <h5 className="mb-2 mt-8 sm:mt-0 sm:ml-6 ml-0 text-2xl font-bold text-white">Express Inventory App</h5>
+          <div className="flex">
+            <div className="flex flex-col text-center px-6 lg:my-0 my-6  ">
+              <h5 className="lg:mb-2 lg:mt-8 mt-4  lg:ml-5 text-2xl font-bold text-white">Express Inventory App</h5>
               <p className="mb-3  font-normal  sm:ml-6 ml-0 text-gray-400">Personal Inventory Application Project</p>
             </div>
           </div>
         </div>
-        <div className=" mx-16 flex flex-col items-center border border-gray-700 rounded-3xl backdrop-blur-3xl box-border p-10 bg-gradient-135 from-slate-900 to-transparent shadow sm:flex-row ">
-          <div className=" sm:h-[300px] h-[250px] w-[200px]   sm:bg-auto sm:w-[800px] rounded-3xl overflow-hidden">
-            <div
+        <div
+          onClick={() => {
+            navigate("/portfolio/ui_ux/postit");
+          }}
+          className="cursor-pointer mx-16 mb-24 md:mx-[100px] lg:mx-[400px] flex items-center border border-gray-700 pl-6 rounded-3xl backdrop-blur-3xl box-border lg:p-10 bg-gradient-135 from-slate-900 to-transparent shadow "
+        >
+          <div className="h-[100px] w-[100px] lg:h-[200px] lg:w-[200px] rounded-3xl overflow-hidden">
+            <a
+              href="/"
               id="react-shopping-cart"
-              className=" flex justify-center items-center h-[300px]  sm:h-[300px]  sm:w-full"
-            ></div>
+              className="bg-no-repeat flex justify-center items-center lg:h-full w-full h-[100px]"
+            ></a>
           </div>
-          <div className="flex w-1/3 justify-center">
-            <div className="flex flex-col text-center  justify-center ">
-              <h5 className="mb-2 mt-8 sm:mt-0 sm:ml-6 ml-0 text-2xl font-bold text-white">React Shopping Cart</h5>
+          <div className="flex">
+            <div className="flex flex-col text-center px-6 lg:my-0 my-6  ">
+              <h5 className="lg:mb-2 lg:mt-8 mt-4  lg:ml-5 text-2xl font-bold text-white">React Shopping Cart</h5>
               <p className="mb-3  font-normal  sm:ml-6 ml-0 text-gray-400">Personal Shopping Cart Project</p>
             </div>
           </div>
         </div>
-        <div className=" mx-16 flex flex-col items-center border border-gray-700 rounded-3xl backdrop-blur-3xl box-border p-10 bg-gradient-135 from-slate-900 to-transparent shadow sm:flex-row ">
-          <div className=" sm:h-[300px] h-[250px] w-[200px]   sm:bg-auto sm:w-[800px] rounded-3xl overflow-hidden">
-            <div
+        <div
+          onClick={() => {
+            navigate("/portfolio/ui_ux/postit");
+          }}
+          className="cursor-pointer mx-16 mb-24 md:mx-[100px] lg:mx-[400px] flex items-center border border-gray-700 pl-6 rounded-3xl backdrop-blur-3xl box-border lg:p-10 bg-gradient-135 from-slate-900 to-transparent shadow "
+        >
+          <div className="h-[100px] w-[100px] lg:h-[200px] lg:w-[200px] rounded-3xl overflow-hidden">
+            <a
+              href="/"
               id="memory-card"
-              className=" flex justify-center items-center h-[300px]  sm:h-[300px]  sm:w-full"
-            ></div>
+              className="bg-no-repeat flex justify-center items-center lg:h-full w-full h-[100px]"
+            ></a>
           </div>
-          <div className="flex w-1/3 justify-center">
-            <div className="flex flex-col text-center  justify-center ">
-              <h5 className="mb-2 mt-8 sm:mt-0 sm:ml-6 ml-0 text-2xl font-bold text-white">Memory Card Game</h5>
+          <div className="flex">
+            <div className="flex flex-col text-center px-6 lg:my-0 my-6  ">
+              <h5 className="lg:mb-2 lg:mt-8 mt-4  lg:ml-5 text-2xl font-bold text-white">Memory Card Game</h5>
               <p className="mb-3  font-normal  sm:ml-6 ml-0 text-gray-400">Personal Memory Card Project</p>
             </div>
           </div>
         </div>
-        <div className=" mx-16 flex flex-col items-center border border-gray-700 rounded-3xl backdrop-blur-3xl box-border p-10 bg-gradient-135 from-slate-900 to-transparent shadow sm:flex-row ">
-          <div className=" sm:h-[300px] h-[250px] w-[200px]   sm:bg-auto sm:w-[800px] rounded-3xl overflow-hidden">
-            <div
+        <div
+          onClick={() => {
+            navigate("/portfolio/ui_ux/postit");
+          }}
+          className="cursor-pointer mx-16 mb-24 md:mx-[100px] lg:mx-[400px] flex items-center border border-gray-700 pl-6 rounded-3xl backdrop-blur-3xl box-border lg:p-10 bg-gradient-135 from-slate-900 to-transparent shadow "
+        >
+          <div className="h-[100px] w-[100px] lg:h-[200px] lg:w-[200px] rounded-3xl overflow-hidden">
+            <a
+              href="/"
               id="weather-app"
-              className=" flex justify-center items-center h-[300px] sm:bg-top sm:h-[300px]  sm:w-full"
-            ></div>
+              className="bg-no-repeat flex justify-center items-center lg:h-full w-full h-[100px]"
+            ></a>
           </div>
-          <div className="flex w-1/3 justify-center">
-            <div className="flex flex-col text-center  justify-center ">
-              <h5 className="mb-2 mt-8 sm:mt-0 sm:ml-6 ml-0 text-2xl font-bold text-white">Weather App</h5>
+          <div className="flex">
+            <div className="flex flex-col text-center px-6 lg:my-0 my-6  ">
+              <h5 className="lg:mb-2 lg:mt-8 mt-4  lg:ml-5 text-2xl font-bold text-white">Weather App</h5>
               <p className="mb-3  font-normal  sm:ml-6 ml-0 text-gray-400">Personal Weather App Project</p>
             </div>
           </div>
         </div>
-        <div className=" mx-16 flex flex-col items-center border border-gray-700 rounded-3xl backdrop-blur-3xl box-border p-10 bg-gradient-135 from-slate-900 to-transparent shadow sm:flex-row ">
-          <div className=" sm:h-[300px] h-[250px] w-[200px]   sm:bg-auto sm:w-[800px] rounded-3xl overflow-hidden">
-            <div
+        <div
+          onClick={() => {
+            navigate("/portfolio/ui_ux/postit");
+          }}
+          className="cursor-pointer mx-16 mb-24 md:mx-[100px] lg:mx-[400px] flex items-center border border-gray-700 pl-6 rounded-3xl backdrop-blur-3xl box-border lg:p-10 bg-gradient-135 from-slate-900 to-transparent shadow "
+        >
+          <div className="h-[100px] w-[100px] lg:h-[200px] lg:w-[200px] rounded-3xl overflow-hidden">
+            <a
+              href="/"
               id="task-app"
-              className=" flex justify-center items-center h-[300px] sm:bg-top sm:h-[300px]  sm:w-full"
-            ></div>
+              className="bg-no-repeat flex justify-center items-center lg:h-full w-full h-[100px]"
+            ></a>
           </div>
-          <div className="flex w-1/3 justify-center">
-            <div className="flex flex-col text-center  justify-center ">
-              <h5 className="mb-2 mt-8 sm:mt-0 sm:ml-6 ml-0 text-2xl font-bold text-white">Task App</h5>
+          <div className="flex">
+            <div className="flex flex-col text-center px-6 lg:my-0 my-6  ">
+              <h5 className="lg:mb-2 lg:mt-8 mt-4  lg:ml-5 text-2xl font-bold text-white">Task App</h5>
               <p className="mb-3  font-normal  sm:ml-6 ml-0 text-gray-400">Personal Task App Project</p>
             </div>
           </div>
         </div>
-        <div className=" mx-16 flex flex-col items-center border border-gray-700 rounded-3xl backdrop-blur-3xl box-border p-10 bg-gradient-135 from-slate-900 to-transparent shadow sm:flex-row ">
-          <div className=" sm:h-[300px] h-[250px] w-[200px]   sm:bg-auto sm:w-[800px] rounded-3xl overflow-hidden">
-            <div
+        <div
+          onClick={() => {
+            navigate("/portfolio/ui_ux/postit");
+          }}
+          className="cursor-pointer mx-16  md:mx-[100px] lg:mx-[400px] flex items-center border border-gray-700 pl-6 rounded-3xl backdrop-blur-3xl box-border lg:p-10 bg-gradient-135 from-slate-900 to-transparent shadow "
+        >
+          <div className="h-[100px] w-[100px] lg:h-[200px] lg:w-[200px]  rounded-3xl overflow-hidden">
+            <a
+              href="/"
               id="etch-n-sketch"
-              className=" flex justify-center items-center h-[300px] sm:bg-top sm:h-[300px]  sm:w-full"
-            ></div>
+              className="bg-no-repeat flex justify-center items-center lg:h-full w-full h-[100px]"
+            ></a>
           </div>
-          <div className="flex w-1/3 justify-center">
-            <div className="flex flex-col text-center  justify-center ">
-              <h5 className="mb-2 mt-8 sm:mt-0 sm:ml-6 ml-0 text-2xl font-bold text-white">Etch N' Sketch</h5>
+          <div className="flex">
+            <div className="flex flex-col text-center px-6 lg:my-0 my-6  ">
+              <h5 className="lg:mb-2 lg:mt-8 mt-4  lg:ml-5 text-2xl font-bold text-white">Etch N' Sketch</h5>
               <p className="mb-3  font-normal  sm:ml-6 ml-0 text-gray-400">Personal Etch N' Sketch Project</p>
             </div>
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

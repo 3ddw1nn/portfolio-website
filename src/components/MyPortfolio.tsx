@@ -33,6 +33,7 @@ function MyPortfolio() {
   return (
     <div>
       {" "}
+      <div className="mt-[-30px]" />
       <div className="gallery sm:mt-12 sm:px-24 sm:h-[350px] h-[150px] rounded-full">
         {Images.map((image: Image) => (
           <div className="relative sm:visible invisible" key={image.src}>

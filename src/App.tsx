@@ -9,6 +9,7 @@ import UI_UX from "./pages/portfolio/UI_UX/UI_UX";
 import "./App.css";
 import PostIt from "./pages/portfolio/UI_UX/PostIt";
 import Code from "./pages/portfolio/Code/Code";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
 
         <Route path="*" element={<Missing />} />
       </Routes>
+      <Footer />
     </div>
   );
 };

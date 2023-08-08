@@ -3,8 +3,8 @@ import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="relative bottom-0 left-0 my-8 w-screen bg-transparent px-8 pb-4 pt-8">
-      <div className="mx-auto max-w-5xl">
+    <footer className=" bottom-0 left-0 my-8 w-screen bg-transparent px-8 lg:px-24 pb-4 pt-8">
+      <div className="">
         <div className="flex items-center justify-between">
           <div className="flex items-center justify-between">
             <img src={"/images/Logo.svg"} loading="lazy" alt="Logo" className=" mr-2 h-6 w-6 " />
@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="mt-4 flex justify-between text-sm text-gray-600">
           <div className="text-white">&copy; {new Date().getFullYear()}</div>
-          <div className="text-white">edwardhyunlee@gmail.com</div>
+          <div className="text-white">ehleedev@gmail.com</div>
         </div>
       </div>
     </footer>

@@ -30,7 +30,7 @@ export const ContactMe = () => {
   };
 
   return (
-    <div className="py-8 lg:py-16 px-12 w-full">
+    <div className="py-8 lg:py-16 px-12 lg:px-72 w-full">
       <h2 className="mb-4 ">
         <TextEffect1 />
       </h2>

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { ArchCatalog } from "./ArchCatalog.json";
 
 import "./gallery.css";
-import Footer from "../../../components/Footer/Footer";
 // type Image = {
 //   name: string;
 //   src: string;
@@ -64,7 +63,6 @@ const Architecture = () => {
           );
         })}
       </div>
-      <Footer />
     </div>
   );
 };

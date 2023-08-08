@@ -1,10 +1,8 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
 
 import { ArtCatalog } from "./ArtCatalog.json";
 
 import "./gallery.css";
-import Footer from "../../../components/Footer/Footer";
 
 const Illustration = () => {
   const [model, setModel] = useState(false);
@@ -58,7 +56,6 @@ const Illustration = () => {
           );
         })}
       </div>
-      <Footer />
     </div>
   );
 };

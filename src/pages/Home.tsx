@@ -8,17 +8,11 @@ import Foreground from "../assets/ParallaxImages/Foreground.webp";
 import MiddleStars from "../assets/ParallaxImages/MiddleStars.png";
 import BigStars from "../assets/ParallaxImages/BigStars.png";
 import Stars from "../assets/ParallaxImages/Stars.png";
-import Sky from "../assets/ParallaxImages/Sky.png";
-
-import { IParallax, Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 import "./infoAnimation.css";
 import "./multiTextAnimation.css";
 import "./borderAnimation.css";
 import "./myPortfolioAnimation.css";
-import Footer from "../components/Footer/Footer";
-import { useCallback, useEffect } from "react";
-let element: IParallax | null;
 
 const Home = ({}) => {
   return (
@@ -69,9 +63,10 @@ const Home = ({}) => {
         {/* Foreground Layer */}
         <img loading="lazy" src={Foreground} alt="Foreground" className="absolute top-56 z-5 w-full" />
         {/* My Portfolio Section */}
-        <div className="mt-[-210px] lg:mt-40">
-          <div id="portfolio" className="">
-            {/* <MyPortfolio /> */}
+        <div id="portfolio" className="lg:mt-0 mt-[-175px]"></div>
+        <div className="mt-[-210px]  lg:mt-40">
+          <div className="">
+            <MyPortfolio />
           </div>
           <div id="about" className="mt-24">
             <AboutMe />
@@ -83,7 +78,6 @@ const Home = ({}) => {
             <ContactMe />
           </div>
         </div>
-        <Footer />
       </div>
     </div>
   );
