@@ -26,7 +26,7 @@ function AboutMe() {
           </h1>
         </div>
         <div className=" flex justify-centerabsolute mt-[-90px] text-white">
-          <div className=" text-l text-left text-center px-11 pb-6">
+          <div className=" text-l lg:text-xl text-left text-center px-11 pb-6">
             <h1 className="">
               <span ref={reference} className={`pr-1 opacity-0 ${inView ? "infoParagraph" : ""}`}>
                 I'm
