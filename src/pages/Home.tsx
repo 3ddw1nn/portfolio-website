@@ -2,7 +2,6 @@ import AboutMe from "../components/AboutMe";
 import MySkills from "../components/MySkills";
 import MyPortfolio from "../components/MyPortfolio";
 import { ContactMe } from "../components/ContactMe";
-// import MySkills from "../components/Skills2";
 
 import Foreground from "../assets/ParallaxImages/Foreground.webp";
 import MiddleStars from "../assets/ParallaxImages/MiddleStars.png";
