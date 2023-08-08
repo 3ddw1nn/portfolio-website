@@ -160,7 +160,7 @@ const Navbar: React.FC = () => {
                 }
               })}
             </div>
-            {links.map((link: DirectLink, index) => {
+            {/* {links.map((link: DirectLink, index) => {
               return (
                 <div key={index} className=" text-white lg:mr-0 mr-[315px] text-xl mx-5 mt-3">
                   <a
@@ -171,7 +171,7 @@ const Navbar: React.FC = () => {
                   </a>
                 </div>
               );
-            })}
+            })} */}
           </ul>
         </div>
       </div>
