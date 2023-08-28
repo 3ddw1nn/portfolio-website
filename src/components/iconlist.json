@@ -37,6 +37,26 @@
       "src": "/Skills/code/TailwindIcon.svg"
     },
     {
+      "title": "Netflify",
+      "src": "/Skills/code/NetlifyIcon.svg"
+    },
+    {
+      "title": "NxIcon",
+      "src": "/Skills/code/NxIcon.svg"
+    },
+    {
+      "title": "Prisma",
+      "src": "/Skills/code/PrismaIcon.svg"
+    },
+    {
+      "title": "TurboRepo",
+      "src": "/Skills/code/TurboRepoIcon.svg"
+    },
+    {
+      "title": "Firebase",
+      "src": "/Skills/code/FireBaseIcon.svg"
+    },
+    {
       "title": "GitHub",
       "src": "/Skills/code/GitHubIcon.svg"
     },
